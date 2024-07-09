@@ -1,0 +1,300 @@
+body {
+    height: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.container-header {
+    background-color: #620674;
+    color: #ffffff;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.container-header h1 {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container-header input {
+    margin-right: 15px;
+}
+
+/*Menu*/
+
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+    background: #B183BA;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vh;
+}
+
+#menu ul li a {
+    font-size: x-large;
+    color: #620674;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    color: #000000;
+}
+
+/*Imagem banner*/
+
+.banner {
+    background-image: url('./Imagens/banner.1.jpeg'); 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    background-color: rgb(194, 97, 97); 
+    height: 80vh;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card1 {
+    background-color: rgba(219, 131, 214, 0.3);
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card2 {
+    background-color: rgba(98, 6, 116, 0.3);
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card3 {
+    background-color: rgba(216, 193, 221, 0.3);
+    height: 200px;
+    width: 25%;
+    text-align: center;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.line1 {
+    width: 100%;
+    margin: 0px;
+    background-color: #DB83D6;
+    min-height: 10px;
+}
+
+.line2 {
+    width: 100%;
+    margin: 0px;
+    background-color: #D8C1DD;
+    min-height: 10px;
+}
+
+.line3 {
+    width: 100%;
+    margin: 0px;
+    background-color: #B183BA;
+    min-height: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cards {
+        flex-direction: column; 
+    }
+
+    .card1, .card2, .card3 {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+/* Quem Somos Responsivo */
+.quemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.quemSomos h1 {
+    margin: 10px 0;
+    color: #9103ad;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna {
+    text-align: justify;
+    width: 100%;
+    margin: 10px 0;
+    color: #620674;
+}
+
+@media screen and (min-width: 720px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .coluna {
+        width: 45%;
+    }
+}
+
+/* Links Responsivos */
+.links {
+    background-image: url("https://www.10wallpaper.com/wallpaper/1920x1440/1804/Purple_gradient_abstract_vector_image_1920x1440.jpg");
+    background-color: #B183BA;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.link1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+.link1 img {
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 720px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .link1 {
+        margin: 20px 0;
+    }
+}
+
+/* Cards */
+main.especialidades {
+    background-color: #620674;
+    display: flex;
+    justify-content: center;
+    color: #620674;
+    align-items: center;
+    padding: 32px;
+}
+
+main.especialidades section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-width: 468px;
+    margin-left: 32px;
+}
+
+main.especialidades section.card:first-child {
+    margin-left: 0;
+}
+
+main.especialidades section.card .icon {
+    width: 130px;
+    height: 130px;
+}
+
+main.especialidades section.card img {
+    width: 100%;
+}
+
+main.especialidades section.card h3 {
+    margin: 16px 0;
+    font-size: 100%;
+}
+
+main.especialidades section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.especialidades section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    background: linear-gradient(to right, #9103ad, #B183BA);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+    main.especialidades {
+        flex-direction: column;
+    }
+    main.especialidades section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.especialidades section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    .container-header h1 {
+        font-size: large;
+    }
+
+    .banner {
+        height: 45vh;
+    }
+}

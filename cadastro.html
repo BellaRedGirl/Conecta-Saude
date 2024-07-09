@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styleCadastro.css">
+    <script src="https://kit.fontawesome.com/883eeaf1c4.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/icone.jpeg">
+    <title>Entrar</title>
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Login</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Digite seu email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <input type="submit" value="Entrar" class="btn">
+                <p class="social-text">Entre com uma rede social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+
+                <p class="account-text">Não tem uma conta? <a href="#" id="sign-up-btn2">Cadastre-se</a></p>
+            </form>
+
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Cadastro</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nome">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <input type="submit" value="Cadastro" class="btn">
+                <p class="social-text">Cadastre-se com uma rede social</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Já tem uma conta? <a href="#" id="sign-in-btn2">login</a></p>
+                
+            </form>
+        </div>
+        
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Já realizou seu cadastro? </h3>
+                    <p>Acesse sua conta ou volte para página inicial!</p>
+                    <button class="btn" id="sign-in-btn">Login</button>
+                    <a href="index.html"><button class="btn" id="return">Retornar</button></a>
+                </div>
+                <img src="Imagens/personagens.png" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Não possui uma conta?</h3>
+                    <p>Realize seu cadastro ou volte para página inicial!</p>
+                    <button class="btn" id="sign-up-btn">Cadastre-se</button>
+                    <a href="index.html"><button class="btn" id="return">Retornar</button></a>
+                </div>
+                <img src="Imagens/idosos.png" alt="" class="image">
+            </div>
+        </div>
+   
+
+   
+      
+   
+    </div>
+
+    
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
